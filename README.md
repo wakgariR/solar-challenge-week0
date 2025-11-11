@@ -57,4 +57,10 @@ CI
 - Workflow: .github/workflows/ci.yml
 - The workflow runs `python --version` and `pip install -r requirements.txt` to reproduce the environment on GitHub runners.
 
-check
+### Dashboard UI running locally
+
+![alt text](image.png)
+
+- Can filter the data by country. The image below shows a dropdown to select a country.
+
+![alt text](image-1.png)

@@ -15,19 +15,20 @@ The dashboard enables:
 
 ## 2. Architecture & Folder Structure
 
+```text
 project-root/
 ├── app/
-│ ├── init.py
-│ ├── main.py # Streamlit app
-│ └── utils.py # Data loading, cleaning, visualization functions
-├── data/ # Raw CSV data files
-│ ├── benin-malanville_clean.csv
-│ ├── sierraleone-bumbuna_clean.csv
-│ └── togo-dapaong_qc_clean.csv
+│   ├── __init__.py
+│   ├── main.py              # Streamlit app
+│   └── utils.py             # Data loading, cleaning, visualization functions
+├── data/                    # Raw CSV data files
+│   ├── benin-malanville_clean.csv
+│   ├── sierraleone-bumbuna_clean.csv
+│   └── togo-dapaong_qc_clean.csv
 └── scripts/
-├── init.py
-└── README.md
-
+    ├── __init__.py
+    └── README.md
+```
 ---
 
 ## 3. Technical Development
@@ -55,20 +56,8 @@ project-root/
 
 ## 4. Data Processing Pipeline
 
-```mermaid
-flowchart TD
-    A[CSV Data Files] --> B[Load & Clean Data (utils.py)]
-    B --> C[Streamlit Dashboard (main.py)]
-    C --> D[Sidebar: Country Selection]
-    C --> E[Boxplots: GHI, DNI, DHI]
-    C --> F[Summary Table: Mean / Median / Std]
-    C --> G[Bar Chart: Average Metrics]
-    C --> H[Statistical Testing: ANOVA / Kruskal-Wallis]
-    D --> E
-    D --> F
-    D --> G
-    D --> H
-```
+<img width="1267" height="626" alt="image" src="https://github.com/user-attachments/assets/e63a8645-6967-4caf-9a9d-d99390123f72" />
+
 
 ## 5. Key Functions in `utils.py`
 
@@ -85,21 +74,21 @@ flowchart TD
 
 ### 6. Installation & Setup
 
-# Clone the repository
+### Clone the repository
 
 git clone <your-repo-url>
 cd solar-challenge-week0
 
-# Create and activate virtual environment
+### Create and activate virtual environment
 
 python -m venv .venv
 .venv\Scripts\activate # Windows
 source .venv/bin/activate # macOS/Linux
 
-# Install dependencies
+### Install dependencies
 
 pip install -r requirements.txt
 
-# Run the dashboard
+### Run the dashboard
 
 streamlit run app/main.py

@@ -14,7 +14,7 @@ The dashboard enables:
 ---
 
 ## 2. Architecture & Folder Structure
-
+```plaintext
 project-root/
 ├── app/
 │ ├── init.py
@@ -55,20 +55,8 @@ project-root/
 
 ## 4. Data Processing Pipeline
 
-```mermaid
-flowchart TD
-    A[CSV Data Files] --> B[Load & Clean Data (utils.py)]
-    B --> C[Streamlit Dashboard (main.py)]
-    C --> D[Sidebar: Country Selection]
-    C --> E[Boxplots: GHI, DNI, DHI]
-    C --> F[Summary Table: Mean / Median / Std]
-    C --> G[Bar Chart: Average Metrics]
-    C --> H[Statistical Testing: ANOVA / Kruskal-Wallis]
-    D --> E
-    D --> F
-    D --> G
-    D --> H
-```
+<img width="1317" height="668" alt="image" src="https://github.com/user-attachments/assets/f7289e1c-e775-4c81-8b71-2e5a53fa726e" />
+
 
 ## 5. Key Functions in `utils.py`
 

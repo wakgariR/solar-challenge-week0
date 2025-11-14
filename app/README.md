@@ -27,7 +27,7 @@ project-root/
 └── scripts/
 ├── init.py
 └── README.md
-
+```
 ---
 
 ## 3. Technical Development
